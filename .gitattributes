@@ -1,0 +1,3 @@
+# 统一使用 LF：SHA256SUMS.txt 里的哈希按工作区原始字节计算，
+# 若按 autocrlf 转换行尾，Windows 与 Linux 克隆会算出不同结果。
+* text=auto eol=lf

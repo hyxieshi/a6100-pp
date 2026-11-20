@@ -18,7 +18,8 @@
 |---|---|
 | `A6100-UNLOCK-OPERATIONS-GUIDE.md` | **唯一操作依据**。交给 AI，按章节逐关执行 |
 | `README.md` | 本文件（风险声明、使用方法、已发现问题） |
-| `SHA256SUMS.txt` | 上述文档的 SHA-256，用于校验内容未被改动 |
+| `SHA256SUMS.txt` | 上述文件与 `LICENSE` 的 SHA-256，用于校验内容未被改动 |
+| `LICENSE` | MIT 许可，覆盖本仓库全部文档 |
 
 **本仓库不再提供 `PPUnlock-Offline*.exe`**（已删除，原因见第三节）。所有操作改为「AI + 文档 + 人工逐步确认」路线。
 
@@ -123,7 +124,7 @@ certutil -hashfile A6100-UNLOCK-OPERATIONS-GUIDE.md SHA256
 certutil -hashfile README.md SHA256
 ```
 
-输出应与 `SHA256SUMS.txt` 一致。该文件只覆盖文档，不再包含任何 exe。
+输出应与 `SHA256SUMS.txt` 一致（该文件另含 `LICENSE` 一行）。它只覆盖本仓库自身文件，不再包含任何 exe。
 
 ---
 
@@ -139,4 +140,5 @@ certutil -hashfile README.md SHA256
 ## 变更记录
 
 - **2026-11-20**：删除 `PPUnlock-Offline-v3.1.0.exe`；改为纯文档路线；新增「刷机有风险」声明、变砖事件说明与操作层问题清单；`SHA256SUMS.txt` 改为只覆盖文档。
+- **2026-11-20**：新增 MIT `LICENSE`；校验文件更名为 `SHA256SUMS.txt` 并补入 `LICENSE` 的哈希。
 </content>
